@@ -179,7 +179,7 @@ const LatestWork = () => {
 
       <div className="instagram-icon">
         <a
-          href="https://www.instagram.com/pramod.photogrphy/"
+          href="https://www.instagram.com/thechitras/?igsh=MXRsMTgxaHQ0OXEwYg%3D%3D#"
           target="_blank"
           rel="noopener noreferrer"
         >
