@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; // ✅ Import motion
+import { motion } from "framer-motion";
 import "./OurServices.css";
 
 const services = [
@@ -11,12 +11,10 @@ const services = [
     title: "Pre-wedding Photography",
     image: "https://i.postimg.cc/pT6L680G/DSC09283.jpg",
   },
-
   {
     title: "Engagement Photography",
     image: "https://i.postimg.cc/zvxMDG1Q/DSC01257.jpg",
   },
-
   {
     title: "Baby Shoot",
     image:
@@ -32,15 +30,15 @@ const OurServices = () => {
   };
 
   return (
-    <div className="our-services" id="services">
-      <p className="subheading">OUR SERVICES</p>
-      <h2 className="main-heading">
+    <div className="services__container" id="services">
+      <p className="services__subheading">OUR SERVICES</p>
+      <h2 className="services__heading">
         Where every <span>picture</span> <br /> tells a story
       </h2>
-      <div className="services-grid">
+      <div className="services__grid">
         {services.map((service, index) => (
           <motion.div
-            className="service-card"
+            className="services__card"
             key={index}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,9 +49,11 @@ const OurServices = () => {
               src={service.image}
               alt={service.title}
               onClick={() => toggleZoom(index)}
-              className={zoomedIndex === index ? "zoomed" : ""}
+              className={
+                zoomedIndex === index ? "services__img zoomed" : "services__img"
+              }
             />
-            <p>{service.title}</p>
+            <p className="services__title">{service.title}</p>
           </motion.div>
         ))}
       </div>

@@ -1,4 +1,4 @@
-.our-services {
+.services__container {
   background: #921a40;
   color: white;
   text-align: center;
@@ -6,37 +6,37 @@
   font-family: "Poppins", sans-serif;
 }
 
-.subheading {
+.services__subheading {
   font-size: 0.9rem;
   letter-spacing: 1.5px;
   margin-bottom: 1rem;
   color: #ccc;
 }
 
-.main-heading {
+.services__heading {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
   line-height: 1.4;
 }
 
-.main-heading span {
+.services__heading span {
   color: #e0a597;
 }
 
-.services-grid {
+.services__grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
   justify-items: center;
 }
 
-.service-card {
+.services__card {
   max-width: 300px;
   cursor: pointer;
 }
 
-.service-card img {
+.services__img {
   width: 250px;
   height: 300px;
   border-radius: 8px;
@@ -45,24 +45,24 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.service-card img.zoomed {
+.services__img.zoomed {
   transform: scale(1.2);
   z-index: 10;
 }
 
-.service-card p {
+.services__title {
   margin-top: 1rem;
   font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
-  .services-grid {
+  .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  .services-grid {
+  .services__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
