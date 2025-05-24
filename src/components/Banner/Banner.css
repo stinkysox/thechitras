@@ -1,12 +1,41 @@
 .banner {
   background-color: #222831;
-  height: 60vh;
+  min-height: 100vh;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: "Bodoni Moda", serif;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 40px;
+}
+
+.photo-college-one {
+  max-width: 800px;
+  background-color: #222831;
+  padding: 50px;
+  margin-top: 0px;
+}
+
+.top-image img {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.bottom-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.bottom-images img {
+  width: 50%;
+  object-fit: cover;
 }
 
 .banner p {

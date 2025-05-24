@@ -8,9 +8,12 @@ import OurServices from "../../components/OurServices/OurServices";
 import TeasersSection from "../../components/TeasersSection/TeasersSection";
 import LatestWork from "../../components/LatestWork/LatestWork";
 import Testimonials from "../../components/Testimonials/Testimonials";
+import PriceDetails from "../../components/PriceDetails/PriceDetails";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import Footer from "../../components/Footer/Footer";
+
 import ScrollButton from "../../components/ScrollButton/ScrollButton";
+import Gallery from "../../components/Gallery/Gallery";
 const Home = () => {
   return (
     <section className="home-container">
@@ -20,8 +23,10 @@ const Home = () => {
       <StatsCounter />
       <OurServices />
       <LatestWork />
+      <Gallery />
       <TeasersSection />
       <Testimonials />
+      <PriceDetails />
       <ContactSection />
       <Footer />
       <ScrollButton />
