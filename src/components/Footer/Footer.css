@@ -5,6 +5,8 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   margin-top: 0px;
+  width: 100%;
+  border-radius: 0 !important;
 }
 
 .footer-content {
@@ -24,8 +26,8 @@
   width: 90px;
   height: 90px;
   object-fit: cover;
-  border-radius: 8px;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 
 .footer-tagline {

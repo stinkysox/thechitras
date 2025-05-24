@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Banner.css";
-
 const Banner = () => {
   const navigate = useNavigate();
 
@@ -10,10 +9,7 @@ const Banner = () => {
   };
 
   const handleLearnMoreClick = () => {
-    const servicesSection = document.getElementById("services");
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" });
-    }
+    navigate("/services");
   };
 
   return (

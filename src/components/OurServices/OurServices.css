@@ -50,6 +50,31 @@
   z-index: 10;
 }
 
+.visit-gallery {
+  background-color: #d4926a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.visit-gallery:hover {
+  background-color: #c17d58;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.visit-gallery:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .services__title {
   margin-top: 1rem;
   font-size: 1.1rem;

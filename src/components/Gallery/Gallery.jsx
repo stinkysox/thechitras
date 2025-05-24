@@ -1,6 +1,8 @@
 // Gallery.jsx
 import React from "react";
 import "./Gallery.css";
+import Navbar from "../Navbar/Navbar";
+import LatestWork from "../LatestWork/LatestWork";
 
 const photos = [
   "https://i.postimg.cc/sD0y0GHt/IMG-6156.jpg",
@@ -27,16 +29,19 @@ const photos = [
 
 const Gallery = () => {
   return (
-    <section className="gallery-section">
-      <h2 className="gallery-heading">Gallery</h2>
-      <div className="gallery-grid">
-        {photos.map((url, index) => (
-          <div className="gallery-item" key={index}>
-            <img src={url} alt={`gallery-${index}`} />
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <LatestWork />
+      <section className="gallery-section">
+        <h2 className="gallery-heading">Gallery</h2>
+        <div className="gallery-grid">
+          {photos.map((url, index) => (
+            <div className="gallery-item" key={index}>
+              <img src={url} alt={`gallery-${index}`} />
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 
