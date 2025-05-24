@@ -13,10 +13,17 @@
 }
 
 .photo-college-one {
-  max-width: 800px;
   background-color: #222831;
   padding: 50px;
   margin-top: 0px;
+  width: 100%;
+}
+
+.banner-button-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-image img {
