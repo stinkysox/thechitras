@@ -4,29 +4,23 @@ import "./PriceDetails.css";
 const PriceDetails = () => {
   const packages = [
     {
-      title: "Photography and Semi-Cinematography",
-      type: "premium",
+      title: "Standard Package (Photography and FHD Videography)",
+      type: "standard",
       services: [
         "Coverage of Wedding Day",
         "Coverage of Reception/Mehendi Sangeet",
       ],
-      outputs: [
-        "Standard Album (200 Photos)",
-        "Cinematic Film (60 Min)",
-        "Teaser up to 3 Mins",
-        "Instagram Reels",
-        "Edited Photos",
-      ],
+      outputs: ["Album (150 Photos)", "Traditional Video Output (60 Min)"],
       pricing: {
-        singleSide: "₹1,60,000",
-        bothSides: "₹2,80,000",
+        singleSide: "₹90,000",
+        bothSides: "₹1,70,000",
       },
       complementary: "Engagement Photoshoot",
       note: "Excluding Transportation and Accommodation",
     },
     {
-      title: "Photography and Cinematography",
-      type: "luxury",
+      title: "Premium Package (Photography and Cinematography)",
+      type: "premium",
       services: [
         "Coverage of Wedding Day",
         "Coverage of Reception/Mehendi Sangeet",
@@ -35,7 +29,7 @@ const PriceDetails = () => {
         "Premium Album (250 Photos)",
         "Wedding Film (30 Min)",
         "Trailer (5 Mins)",
-        "Teaser up to 1 Min",
+        "Teaser Up To 1 Min",
         "Instagram Reels",
         "Edited Photos",
       ],
@@ -47,16 +41,22 @@ const PriceDetails = () => {
       note: "Excluding Transportation and Accommodation",
     },
     {
-      title: "Photography and FHD Videography",
-      type: "standard",
+      title: "Luxury Package (4K Edition)",
+      type: "luxury",
       services: [
         "Coverage of Wedding Day",
         "Coverage of Reception/Mehendi Sangeet",
       ],
-      outputs: ["Album (150 Photos)", "Traditional Video Output (60 Min)"],
+      outputs: [
+        "Standard Album (200 Photos)",
+        "Cinematic Film (60 Min)",
+        "Teaser Up To 3 Mins",
+        "Instagram Reels",
+        "Edited Photos",
+      ],
       pricing: {
-        singleSide: "₹90,000",
-        bothSides: "₹1,70,000",
+        singleSide: "₹1,60,000",
+        bothSides: "₹2,80,000",
       },
       complementary: "Engagement Photoshoot",
       note: "Excluding Transportation and Accommodation",
@@ -119,8 +119,11 @@ const PriceDetails = () => {
         <div className="packages-grid">
           {packages.map((pkg, index) => (
             <div key={index} className={`package-card ${pkg.type}`}>
-              {pkg.type === "luxury" && (
+              {pkg.type === "premium" && (
                 <div className="premium-badge">PREMIUM</div>
+              )}
+              {pkg.type === "luxury" && (
+                <div className="premium-badge">LUXURY</div>
               )}
 
               <h2 className="package-title">{pkg.title}</h2>

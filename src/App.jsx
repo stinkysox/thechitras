@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Formsection from "./components/FormSection/FormSection";
 import OurServices from "./components/OurServices/OurServices";
-import LatestWork from "./components/LatestWork/LatestWork";
 import Gallery from "./components/Gallery/Gallery";
 import TeasersSection from "./components/TeasersSection/TeasersSection";
 import Testimonials from "./components/Testimonials/Testimonials";
